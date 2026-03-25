@@ -1,3 +1,5 @@
+<!-- github repo: https://github.com/maxxi0030/prd-4.git -->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,94 +9,83 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
 
-
   <body>
-    <header>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand bg-white">
+        <div class="container">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="btn btn-primary dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                Introduction
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#grid">Grid System</a></li>
+                <li><a class="dropdown-item" href="#components">Components</a></li>
+                <li><a class="dropdown-item" href="#js">JS Plugins</a></li>
+                <li><a class="dropdown-item" href="#community">Community</a></li>
+              </ul>
+            </li>
 
-<nav class="navbar navbar-expand sticky-top navbar-light bg-light border-bottom">
-  <div class="container-fluid">
-    <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#getting-started">Getting started</a>
+            </li>
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle btn btn-primary text-white" 
-           href="#" 
-           data-bs-toggle="dropdown">
-          Introduction
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#grid">Grid System</a></li>
-          <li><a class="dropdown-item" href="#components">Components</a></li>
-          <li><a class="dropdown-item" href="#js">JS Plugins</a></li>
-          <li><a class="dropdown-item" href="#community">Community</a></li>
-        </ul>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="#getting-started">Getting started</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="#author">Author</a>
-      </li>
-
-    </ul>
-  </div>
-</nav>
-    
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#author">Author</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    
+
     <main>
-          <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <!-- main content-->
+          <div class="col-lg-9">
+            <h1>Bootstrap</h1>
 
-    <div class="row">
-
-      <!-- main content-->
-  <div class="col-lg-9">
-    <h1>Bootstrap</h1>
-
-    <h2>Introduction to Bootstrap</h2>
-    <p>Bootstrap is a popular front-end framework for developing responsive and mobile-first websites and web applications.
+            <h2>Introduction to Bootstrap</h2>
+            <p>Bootstrap is a popular front-end framework for developing responsive and mobile-first websites and web applications.
 Initially developed by Mark Otto and Jacob Thornton at Twitter, it was released as an open-source project in 2011.
 Bootstrap provides developers with a comprehensive set of HTML, CSS, and JavaScript components,
 allowing for the rapid creation of sleek and user-friendly interfaces.</p>
-    <hr>
+            <hr>
 
-    <h2>Grid System and Responsiveness</h2>
-    <p>At its core, Bootstrap utilizes a grid system based on a 12-column layout, offering developers a flexible and
+            <h2 id="grid">Grid System and Responsiveness</h2>
+            <p>At its core, Bootstrap utilizes a grid system based on a 12-column layout, offering developers a flexible and
 responsive structure for organizing content across various screen sizes and devices. This grid system simplifies
 the process of creating responsive designs, enabling websites to adapt seamlessly to desktops, tablets,
 and mobile phones without the need for extensive custom coding.</p>
-    <hr>
+            <hr>
 
-    <h2>Pre-styled Components and Utilities</h2>
-    <p>One of the key features of Bootstrap is its extensive collection of pre-styled components and utilities,
+            <h2 id="components">Pre-styled Components and Utilities</h2>
+            <p>One of the key features of Bootstrap is its extensive collection of pre-styled components and utilities,
 including navigation bars, buttons, forms, and typography. These components are designed with modern web
 design principles in mind, providing developers with a consistent and aesthetically pleasing toolkit for building
 visually appealing interfaces. Moreover, Bootstrap's modular architecture allows developers to customize and extend
 its functionality to suit the specific requirements of their projects.</p>
-    <hr>
+            <hr>
 
-    <h2>JavaScript Plugin Support</h2>
-    <p>Bootstrap also includes robust support for JavaScript plugins, such as modals, carousels, and tooltips, which enhance
+            <h2 id="js">JavaScript Plugin Support</h2>
+            <p>Bootstrap also includes robust support for JavaScript plugins, such as modals, carousels, and tooltips, which enhance
 the interactivity and user experience of web applications. These plugins are easy to integrate into Bootstrap-based
 projects and are thoroughly documented, making it straightforward for developers to incorporate advanced functionality
 into their designs.</p>
-    <hr>
+            <hr>
 
-    <h2>Active Community and Ecosystem</h2>
-    <p>In addition to its rich set of features and components, Bootstrap boasts a vibrant and active community of developers
+            <h2 id="community">Active Community and Ecosystem</h2>
+            <p>In addition to its rich set of features and components, Bootstrap boasts a vibrant and active community of developers
 who contribute plugins, themes, and extensions to the framework. This collaborative ecosystem fosters innovation and enables
 developers to leverage the collective expertise of the Bootstrap community to create cutting-edge web experiences.
 As a result, Bootstrap continues to be one of the most widely used front-end frameworks in the web development industry,
 powering millions of websites and applications across the globe.</p>
-    <hr>
+            <hr>
 
-    <h1>Getting started</h1>
+            <h1 id="getting-started">Getting started</h1>
 
-    <div class="border rounded p-3 bg-light">
-   
-    <pre class="mb-0"><code>
-      &lt;!doctype html&gt;
+            <div class="border rounded p-3 bg-light">
+              <pre class="mb-0"><code>&lt;!doctype html&gt;
         &lt;html lang=&quot;en&quot;&gt;
           &lt;head&gt;
             &lt;meta charset=&quot;utf-8&quot;&gt;
@@ -106,90 +97,71 @@ powering millions of websites and applications across the globe.</p>
             &lt;h1&gt;Hello, world!&lt;/h1&gt;
             &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js&quot; integrity=&quot;sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
           &lt;/body&gt;
-        &lt;/html&gt;
+        &lt;/html&gt;</code>
+              </pre>
+            </div>
 
-    </code> 
-    </pre>
-  
-    </div>
+            <h1 id="author">Author</h1>
+            <span class="bg-warning-subtle">Maksims Vinogradovs</span> <br><br>
+          </div>
 
-    <h1>Author</h1>
-       <p>Vārds Uzvārds</p>
+          <!-- ======================================================================================= -->
+          <!-- SIDEBAR -->
+          <aside class="col-lg-3">
+            <div class="card">
+              <div class="card-header bg-primary text-white">
+                Bootstrap
+              </div>
 
-  </div>
+              <div class="card-body text-center">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"
+                  alt="logo"
+                  class="img-fluid">
+              </div>
 
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Original authors
+                  <small class="text-muted d-block">Mark Otto, Jacob Thornton, and contributors</small>
+                </li>
 
+                <li class="list-group-item">
+                  Developer
+                  <small class="text-muted d-block">Bootstrap Core Teams</small>
+                </li>
 
+                <li class="list-group-item">
+                  Initial release
+                  <small class="text-muted d-block">2011; 14 years ago</small>
+                </li>
 
-<!-- ======================================================================================= -->
-  <!-- SIDEBAR -->
-  <aside class="col-lg-3">
-  <div class="card">
+                <li class="list-group-item">
+                  Stable release
+                  <small class="text-muted d-block">5.3.8 / 25 August 2025; 6 months ago</small>
+                </li>
 
-    <div class="card-header bg-primary text-white">
-      Bootstrap
-    </div>
+                <li class="list-group-item">
+                  Written in
+                  <small class="text-muted d-block">HTML, CSS, JavaScript, Less, Sass and JavaScript</small>
+                </li>
 
-    <div class="card-body text-center">
-      <img 
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png" 
-        alt="logo"
-        class="img-fluid">
-    </div>
+                <li class="list-group-item">
+                  License
+                  <small class="text-muted d-block">MIT License</small>
+                </li>
 
-    <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Website
+                  <a href="https://getbootstrap.com" class="d-block">getbootstrap.com</a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
 
-
-    <li class="list-group-item">
-    Original authors
-    <small class="text-muted d-block">Mark Otto, Jacob Thornton, and contributors</small>
-  </li>
-
-  <li class="list-group-item">
-    Developer
-    <small class="text-muted d-block">Bootstrap Core Teams</small>
-  </li>
-
-  <li class="list-group-item">
-    Initial release
-    <small class="text-muted d-block">2011; 14 years ago</small>
-  </li>
-
-  <li class="list-group-item">
-    Stable release
-    <small class="text-muted d-block">5.3.8 / 25 August 2025; 6 months ago</small>
-  </li>
-
-
-  <li class="list-group-item">
-    Written in
-    <small class="text-muted d-block">HTML, CSS, JavaScript, Less, Sass and JavaScript</small>
-  </li>
-
-
-  <li class="list-group-item">
-    License
-    <small class="text-muted d-block">MIT License</small>
-  </li>
-
-
-  <li class="list-group-item">
-    Website
-    <a href="https://getbootstrap.com" class="d-block">getbootstrap.com</a>
-  </li>
-
-    </ul>
-
-
-
-  </div>
-</aside>
-
-
-
-
-</div>
-</main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
